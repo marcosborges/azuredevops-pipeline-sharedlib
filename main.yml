@@ -4,20 +4,20 @@ stages:
   parameters: 
     name: "INIT1"
     jobs:
-      - template jobs_init.yml
-      - template jobs_init.yml
-      - template jobs_init.yml
+      - template: jobs_init.yml
+      - template: jobs_init.yml
+      - template: jobs_init.yml
 - template: /stage-init.yml
   parameters: 
     name: "INIT2"
     jobs:
-      - template jobs_init.yml
+      - template: jobs_init.yml
 - template: /stage-init.yml
   parameters: 
     name: "INIT3"
     jobs:
-      - template jobs_init.yml
-      - template jobs_init.yml
+      - template: jobs_init.yml
+      - template: jobs_init.yml
 - template: /stage-init.yml
   parameters: 
     name: "INIT4"
