@@ -1,6 +1,6 @@
 stages:
 - stage: "${{ parameters.name }}"
-  displayName: "Init a"
+  displayName: ${{ parameters.tribe }}
   jobs: 
     - ${{ parameters.jobs }}
     
