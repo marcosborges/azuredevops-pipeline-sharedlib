@@ -1,6 +1,14 @@
 # MAIN TEMPLATE
 stages:
 - template: /stage-init.yml
+  parameters: 
+    name: "INIT1"
 - template: /stage-init.yml
+  parameters: 
+    name: "INIT2"
 - template: /stage-init.yml
+  parameters: 
+    name: "INIT3"
 - template: /stage-init.yml
+  parameters: 
+    name: "INIT4"
