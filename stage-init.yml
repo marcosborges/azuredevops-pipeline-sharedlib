@@ -1,5 +1,5 @@
 stages:
-- stage: "INIT"
+- stage: "${{ parameters.name }}"
   displayName: "Init a"
   jobs:
   - job: "JOB_A"
