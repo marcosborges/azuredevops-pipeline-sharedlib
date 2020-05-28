@@ -2,4 +2,4 @@ stages:
 - stage: "${{ parameters.name }}"
   displayName: "Init a"
   jobs:
-  - template "/jobs_init.yml"
+  - template: /jobs_init.yml
