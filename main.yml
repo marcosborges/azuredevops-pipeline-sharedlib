@@ -1,8 +1,11 @@
 # MAIN TEMPLATE
-steps:
-- script: echo "npm install"
-  displayName: 'Npm install'
- 
-- script: |
-    echo "teste"
-  displayName: 'Deploy'
+stages:
+- stage: "INIT"
+  displayName: "Init a"
+  steps:
+  - script: echo "npm install"
+    displayName: 'Npm install'
+
+  - script: |
+      echo "teste"
+    displayName: 'Deploy'
