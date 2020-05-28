@@ -2,7 +2,7 @@
 stages:
 - template: /stage-init.yml
   parameters: 
-    name: "INIT1"
+    name: ${{ parameters.tribe }}
     jobs:
       - template: jobs_init.yml
         parameters: 
