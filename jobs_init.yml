@@ -1,5 +1,5 @@
 jobs:
-  - job: "JOB_TESTE"
+  - job: ${{ parameters.name }}
     displayName: "TESTEA"
     steps:
     - script: echo "npm install"
