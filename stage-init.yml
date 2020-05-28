@@ -2,12 +2,4 @@ stages:
 - stage: "${{ parameters.name }}"
   displayName: "Init a"
   jobs:
-  - job: "JOB_A"
-    displayName: "Job a"
-    steps:
-    - script: echo "npm install"
-      displayName: 'Npm install'
-
-    - script: |
-        echo "teste"
-      displayName: 'Deploy'
+  - template "/jobs_init.yml"
