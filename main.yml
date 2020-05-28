@@ -24,3 +24,16 @@ stages:
     - script: |
         echo "teste"
       displayName: 'Deploy'
+
+- stage: "REVIEW"
+  displayName: "Review a"
+  jobs:
+  - job: "JOB_B"
+    displayName: "Job a"
+    steps:
+    - script: echo "npm install"
+      displayName: 'Npm install'
+
+    - script: |
+        echo "teste"
+      displayName: 'Deploy'
