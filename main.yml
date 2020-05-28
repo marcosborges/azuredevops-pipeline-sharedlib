@@ -5,8 +5,14 @@ stages:
     name: "INIT1"
     jobs:
       - template: jobs_init.yml
+        parameters: 
+          name: "A"
       - template: jobs_init.yml
+        parameters: 
+          name: "B"
       - template: jobs_init.yml
+        parameters: 
+          name: "C"
 - template: /stage-init.yml
   parameters: 
     name: "INIT2"
@@ -17,9 +23,15 @@ stages:
     name: "INIT3"
     jobs:
       - template: jobs_init.yml
+        parameters: 
+          name: "D"
       - template: jobs_init.yml
+        parameters: 
+          name: "E"
 - template: /stage-init.yml
   parameters: 
     name: "INIT4"
     jobs:
       - template: jobs_init.yml
+        parameters: 
+          name: "Y"
