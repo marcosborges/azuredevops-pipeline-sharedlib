@@ -12,3 +12,15 @@ stages:
     - script: |
         echo "teste"
       displayName: 'Deploy'
+- stage: "TESTE"
+  displayName: "Teste a"
+  jobs:
+  - job: "JOB_B"
+    displayName: "Job a"
+    steps:
+    - script: echo "npm install"
+      displayName: 'Npm install'
+
+    - script: |
+        echo "teste"
+      displayName: 'Deploy'
