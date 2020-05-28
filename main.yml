@@ -21,3 +21,5 @@ stages:
 - template: /stage-init.yml
   parameters: 
     name: "INIT4"
+    jobs:
+      - template: jobs_init.yml
