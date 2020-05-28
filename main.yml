@@ -1,41 +1,6 @@
 # MAIN TEMPLATE
 stages:
 - template: /stage-init.yml
-- stage: "TESTE"
-  displayName: "Teste a"
-  jobs:
-  - job: "JOB_B"
-    displayName: "Job a"
-    steps:
-    - script: echo "npm install"
-      displayName: 'Npm install'
-
-    - script: |
-        echo "teste"
-      displayName: 'Deploy'
-
-- stage: "REVIEW"
-  displayName: "Review a"
-  jobs:
-  - job: "JOB_B"
-    displayName: "Job a"
-    steps:
-    - script: echo "npm install"
-      displayName: 'Npm install'
-
-    - script: |
-        echo "teste"
-      displayName: 'Deploy'
-      
-- stage: "TESTE2"
-  displayName: "Review a"
-  jobs:
-  - job: "JOB_B"
-    displayName: "Job a"
-    steps:
-    - script: echo "npm install"
-      displayName: 'Npm install'
-
-    - script: |
-        echo "teste"
-      displayName: 'Deploy'
+- template: /stage-init.yml
+- template: /stage-init.yml
+- template: /stage-init.yml
