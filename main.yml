@@ -1,5 +1,6 @@
 # MAIN TEMPLATE
 stages:
+
 - template: /stage-init.yml
   parameters: 
     name: "${{ variables.tribe }}"
@@ -35,3 +36,11 @@ stages:
       - template: jobs_init.yml
         parameters: 
           name: "Y"
+
+- stage: "POS"
+  steps:
+    - script: echo "npm install"
+      displayName: 'Npm install'
+    - script: |
+        echo "teste"
+      displayName: 'Deploy'
